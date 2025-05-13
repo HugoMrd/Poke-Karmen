@@ -1,6 +1,7 @@
 # Pokédex TypeScript
 
 Un Pokédex moderne développé avec TypeScript, React et NestJS, permettant de rechercher et afficher les caractéristiques des Pokémon.
+![MonPokedex](./pokemon-client/public/PokeScreen.png)
 
 ## 📋 Description
 

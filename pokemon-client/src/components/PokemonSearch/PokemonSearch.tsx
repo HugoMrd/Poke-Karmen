@@ -36,7 +36,7 @@ const PokemonSearch: React.FC<PokemonSearchProps> = ({ onSearch }) => {
               min="1"
               value={pokemonId}
               onChange={(e) => setPokemonId(e.target.value)}
-              placeholder="Ex: 25 pour Pikachu"
+              placeholder="Ex: 100 pour Voltorb"
             />
             <SearchButton type="submit">Rechercher</SearchButton>
           </SearchInputContainer>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, Header, Main, Footer } from "./App.styled";
 import PokemonSearch from "./components/PokemonSearch/PokemonSearch";
 import PokemonCard from "./components/PokemonCard/PokemonCard";
@@ -22,7 +22,7 @@ function App() {
       setPokemon(data);
     } catch (err) {
       console.error("Error fetching pokemon:", err);
-      setError("Failed to fetch Pokémon. Please try again.");
+      setError("Impossible de trouver ce Pokémon. Veuillez réessayer.");
       setPokemon(null);
     } finally {
       setLoading(false);
@@ -34,14 +34,15 @@ function App() {
       <GlobalStyle />
       <Container>
         <Header>
-          <h1>Karmen Pokédex</h1>
+          <h1>Pokédex</h1>
+          <p>Explorez les détails de tous les Pokémon</p>
         </Header>
         <Main>
           <PokemonSearch onSearch={handleSearch} />
           <PokemonCard pokemon={pokemon} loading={loading} error={error} />
         </Main>
         <Footer>
-          <p>Created for Karmen by Hugo Mouraud</p>
+          <p>Créé pour Karmen par Hugo Mouraud :)</p>
         </Footer>
       </Container>
     </ThemeProvider>

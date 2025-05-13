@@ -8,9 +8,11 @@ import {
 } from "./PokemonSearch.styled";
 
 interface PokemonSearchProps {
+   // Fonction appelée lorsqu'une recherche est soumise avec un ID de Pokémon valide
   onSearch: (id: number) => void;
 }
 
+// Composant permettant de rechercher un Pokémon par son ID via un champ de saisie
 const PokemonSearch: React.FC<PokemonSearchProps> = ({ onSearch }) => {
   const [pokemonId, setPokemonId] = useState<string>("");
 
@@ -26,7 +28,7 @@ const PokemonSearch: React.FC<PokemonSearchProps> = ({ onSearch }) => {
     <SearchContainer>
       <form onSubmit={handleSubmit}>
         <FormGroup>
-          <label htmlFor="pokemon-id">Enter Pokémon Number:</label>
+          <label htmlFor="pokemon-id">Entrez le numéro du Pokémon :</label>
           <SearchInputContainer>
             <SearchInput
               id="pokemon-id"
@@ -34,9 +36,9 @@ const PokemonSearch: React.FC<PokemonSearchProps> = ({ onSearch }) => {
               min="1"
               value={pokemonId}
               onChange={(e) => setPokemonId(e.target.value)}
-              placeholder="Ex: 25 for Pikachu"
+              placeholder="Ex: 25 pour Pikachu"
             />
-            <SearchButton type="submit">Search</SearchButton>
+            <SearchButton type="submit">Rechercher</SearchButton>
           </SearchInputContainer>
         </FormGroup>
       </form>

@@ -1,21 +1,24 @@
-
 export const theme = {
     colors: {
-      primary: '#e53935',
-      primaryDark: '#c62828',
-      text: '#333',
-      textLight: '#757575',
-      border: '#eee',
-      backgroundLight: '#f5f5f5',
-      error: '#e53935',
-      success: '#4caf50',
+      primary: '#FF5350',
+      primaryDark: '#DB4845',
+      secondary: '#3B4CCA',
+      text: '#2E3138',
+      textLight: '#6B7280',
+      border: '#E5E7EB',
+      backgroundLight: '#F9FAFB',
+      backgroundCard: '#FFFFFF',
+      error: '#EF4444',
+      success: '#10B981',
+      accent: '#FFDE00',
     },
     shadows: {
-      small: '0 2px 4px rgba(0, 0, 0, 0.1)',
-      medium: '0 2px 8px rgba(0, 0, 0, 0.15)',
+      small: '0 2px 4px rgba(0, 0, 0, 0.05)',
+      medium: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      large: '0 10px 15px rgba(0, 0, 0, 0.1)',
     },
-    borderRadius: '8px',
+    borderRadius: '10px',
     breakpoints: {
-      mobile: '600px',
-    }
+      mobile: '640px',
+    },
   };
